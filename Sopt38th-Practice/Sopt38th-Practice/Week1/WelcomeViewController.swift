@@ -83,7 +83,11 @@ final class WelcomeViewController: UIViewController {
     
     func configure(id: String?) {
         self.id = id
-        welcomLabel.text = "\(id ?? "사용자")님\n반가워요!"
+        if let id = id, !id.isEmpty {
+            welcomLabel.text = "\(id)님\n반가워요!"
+        }
+        else {
+            welcomLabel.text = "사용자님\n반가워요!"
+        }
     }
-    
 }

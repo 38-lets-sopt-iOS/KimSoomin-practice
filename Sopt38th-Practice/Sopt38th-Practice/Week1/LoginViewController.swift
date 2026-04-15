@@ -21,7 +21,7 @@ final class LoginViewController: UIViewController {
         return label
     }()
     
-    lazy var segmentControl: UISegmentedControl = {
+    private lazy var segmentControl: UISegmentedControl = {
         let segmentControl = UISegmentedControl(items: ["아이디로 로그인", "전화번호로 로그인"])
         segmentControl.frame = CGRect(x: 30, y: 230, width: 335, height: 36)
         segmentControl.selectedSegmentIndex = 0
@@ -56,7 +56,7 @@ final class LoginViewController: UIViewController {
         return textField
     }()
     
-    lazy var showPasswordButton: UIButton = {
+    private lazy var showPasswordButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 290, y: 420, width: 80, height: 20))
         button.setTitle("비밀번호 보기", for: .normal)
         button.titleLabel?.textAlignment = .right
@@ -67,7 +67,7 @@ final class LoginViewController: UIViewController {
         return button
     }()
     
-    lazy var loginButton: UIButton = {
+    private lazy var loginButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 30, y: 535, width: 335, height: 57))
         button.setTitle("로그인하기", for: .normal)
         button.backgroundColor = .primaryOrange
