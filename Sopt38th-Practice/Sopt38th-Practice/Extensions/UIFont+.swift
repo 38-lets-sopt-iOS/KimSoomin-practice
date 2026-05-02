@@ -21,4 +21,6 @@ extension UIFont {
     static let subhead4: UIFont = UIFont(name: "Pretendard-SemiBold", size: 14) ?? .systemFont(ofSize: 14, weight: .semibold)
     
     static let info: UIFont = UIFont(name: "Pretendard-Regular", size: 12) ?? .systemFont(ofSize: 12, weight: .regular)
+    
+    static let info2: UIFont = UIFont(name: "Pretendard-Regular", size: 10) ?? .systemFont(ofSize: 10, weight: .regular)
 }
