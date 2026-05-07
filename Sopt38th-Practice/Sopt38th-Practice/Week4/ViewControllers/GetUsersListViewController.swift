@@ -61,7 +61,8 @@ final class GetUsersListViewController: UIViewController {
                 let response = try await GetUsersListService.shared.getUsersList()
                 userList = response
                 updateUI(userList: userList)
-                print("회원가입 성공")
+                
+                print("유저조회 성공")
             } catch {
                 let alert = UIAlertController(
                     title: "유저조회 실패",
