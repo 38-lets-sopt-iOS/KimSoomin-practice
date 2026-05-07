@@ -37,6 +37,7 @@ final class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUI()
         setLayout()
         setStyle()
@@ -182,7 +183,7 @@ extension SignupViewController {
             do{
                 let _ = try await SignupService.shared.postSignup(loginId: id, password: password, name: name, email: email, age: age, part: part)
                 
-                self.navigationController?.pushViewController(LoginAPIViewController(), animated: true)
+                self.navigationController?.pushViewController(SignInViewController(), animated: true)
                 print("회원가입 성공")
             } catch {
                 let alert = UIAlertController(
@@ -200,7 +201,7 @@ extension SignupViewController {
     }
     
     @objc private func loginButtonDidTap() {
-        navigationController?.pushViewController(LoginAPIViewController(), animated: true)
+        navigationController?.pushViewController(SignInViewController(), animated: true)
     }
     
     @objc private func getUsersButtonDidTap() {
