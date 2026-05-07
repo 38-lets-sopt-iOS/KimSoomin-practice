@@ -2,7 +2,7 @@
 //  SignupResponseDTO.swift
 //  Sopt38th-Practice
 //
-//  Created by mandoo on 5/2/26.
+//  Created by mandoo on 5/7/26.
 //
 
 import Foundation
